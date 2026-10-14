@@ -141,9 +141,10 @@ export const AnimePlayer: React.FC<AnimePlayerProps> = ({
     setLoadError(true);
   }}
   className="absolute inset-0 h-full w-full border-0"
-  allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+  sandbox="allow-scripts allow-same-origin allow-forms"
+  allow="autoplay; fullscreen; picture-in-picture"
   allowFullScreen
-  referrerPolicy="origin"
+  referrerPolicy="strict-origin-when-cross-origin"
 />
       </div>
 
