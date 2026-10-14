@@ -132,19 +132,19 @@ export const AnimePlayer: React.FC<AnimePlayerProps> = ({
 
         {/* Native Iframe Embed */}
         <iframe
-          ref={iframeRef}
-          src={embedUrl}
-          title={fullDisplayTitle}
-          onLoad={() => setIsLoading(false)}
-          onError={() => {
-            setIsLoading(false);
-            setLoadError(true);
-          }}
-          className="w-full h-full border-0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-          allowFullScreen
-          referrerPolicy="origin"
-        />
+  ref={iframeRef}
+  src={embedUrl}
+  title={fullDisplayTitle}
+  onLoad={() => setIsLoading(false)}
+  onError={() => {
+    setIsLoading(false);
+    setLoadError(true);
+  }}
+  className="absolute inset-0 h-full w-full border-0"
+  allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+  allowFullScreen
+  referrerPolicy="origin"
+/>
       </div>
 
     
