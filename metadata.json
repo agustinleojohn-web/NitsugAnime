@@ -1,0 +1,6 @@
+{
+  "name": "NitsugAnime",
+  "description": "Modern anime discovery and streaming web application with real catalog browsing, episode player, watchlist, and history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --bg-main: #09090B;
+  --surface-primary: #111113;
+  --surface-secondary: #18181B;
+  --surface-elevated: #202024;
+  --border-subtle: #2C2C32;
+  --text-primary: #FAFAFA;
+  --text-secondary: #A1A1AA;
+  --text-muted: #71717A;
+  --accent-purple: #7C3AED;
+  --accent-hover: #8B5CF6;
+  --status-error: #EF4444;
+  --status-success: #10B981;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #202024;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2C2C32;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Spotlight Effect: Grayscale non-hovered cards when hovering any card */
+.spotlight-grid:hover .anime-card-item {
+  filter: grayscale(85%) opacity(0.55);
+  transform: scale(0.98);
+  transition: all 0.25s ease;
+}
+
+.spotlight-grid:hover .anime-card-item:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.02);
+  z-index: 30;
+}
