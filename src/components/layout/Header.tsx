@@ -20,12 +20,19 @@ export const Header: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
           {/* Logo & Desktop Nav */}
           <div className="flex items-center gap-8">
-            <Link to="/" className="flex items-center ">
-              <img src="/logo.webp" alt="NitsugAnime" className="w-22 transition-transform group-hover:scale-105">
-                
-              </img>
-            
-            </Link>
+            <Link
+  to="/"
+  aria-label="NitsugAnime Home"
+  className="group flex shrink-0 items-center"
+>
+  <img
+    src="/logo.webp"
+    alt="NitsugAnime"
+    width={500}
+    height={333}
+    className="h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+  />
+</Link>
 
             {/* Desktop Navigation Links */}
             <nav className="hidden md:flex items-center gap-1">

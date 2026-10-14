@@ -16,12 +16,19 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pt-2">
           {/* Brand Info (5 columns) */}
           <div className="lg:col-span-5 flex flex-col gap-3.5">
-            <Link to="/" className="flex items-center ">
-                         <img src="/logo.webp" alt="NitsugAnime" className="w-64 transition-transform hover:scale-105">
-                           
-                         </img>
-                       
-                       </Link>
+           <Link
+  to="/"
+  aria-label="NitsugAnime Home"
+  className="group flex shrink-0 items-center"
+>
+  <img
+    src="/logo.webp"
+    alt="NitsugAnime"
+    width={500}
+    height={333}
+    className="w-64 h-auto object-contain transition-transform duration-200 group-hover:scale-105"
+  />
+</Link>
 
             <p className="text-xs text-[#A1A1AA] leading-relaxed max-w-sm">
               Discover and stream thousands of anime episodes and movies with crystal clear quality, fast playback, and private local tracking. No subscription walls or disruptive overlays.
