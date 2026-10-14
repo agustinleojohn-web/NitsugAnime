@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nitsug-anime.vercel.app/sitemap.xml
